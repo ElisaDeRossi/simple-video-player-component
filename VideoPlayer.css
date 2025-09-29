@@ -1,0 +1,105 @@
+/* PROGRESS */
+
+#progress {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row by default */
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+/* Time */
+
+#progress p {
+  color: #ffffffbb;
+  text-align: center;
+  margin: 0;
+  flex-grow: 0;
+}
+
+/* Progress bar range */
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  background-color: #ffffff55;
+  accent-color: #ffffffbb;
+  height: 5px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ffffffbb 0%, #ffffffbb var(--value), #ffffff55 var(--value), #ffffff55 100%);
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ffffffbb;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 10px;
+    height: 10px;
+}
+input[type=range]::-moz-range-thumb {
+    background: #ffffffbb;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 10px;
+    height: 10px;
+}
+input[type=range]::-ms-thumb {
+    background: #ffffffbb;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 10px;
+    height: 10px;
+}
+
+#progress input[type="range"] {
+  flex-grow: 1;
+}
+
+/* CONTROLS */
+
+#controls {
+  display: flex;
+  /* flex-direction: row by default */
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-group {
+  display: flex;
+  /* flex-direction: row by default */
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Buttons */
+
+#controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+svg {
+  fill: #ffffffbb;
+  width: 24px;
+}
+
+#svg-pause,
+#svg-mute,
+#svg-unfullscreen {
+  display: none;
+}
+
+/* Volume range */
+#controls input[type="range"] {
+  height: 3px;
+}
