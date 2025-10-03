@@ -1,3 +1,28 @@
+/* CONTAINER */
+
+#video-container {
+  position: relative;
+  display: flex;
+}
+
+#video-container video {
+  border-radius: 8px;
+  width: 100%;
+}
+#video-container video::-webkit-media-controls {
+  display:none;
+}
+
+/* UI */
+
+#ui {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  padding: 8px;
+}
+
 /* PROGRESS */
 
 #progress {
